@@ -523,8 +523,8 @@ button{
 	box-shadow: 0 15px 45px rgba(0,0,0,0.1);
 	overflow: hidden;
 	transition: 0.5s ease-in-out;
-  margin-right: 7rem;
-  margin-left: 7rem;
+  margin-right: 6rem;
+  margin-left: 4.5rem;
   margin-top: 10rem;
 }
 .cards:hover 
