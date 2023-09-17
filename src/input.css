@@ -3,12 +3,21 @@
 @tailwind utilities;
 
 
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,700;1,700&family=Readex+Pro:wght@200;300;400;500;600;700&display=swap');
+
+
 body {
-    font-family: "Inter", sans-serif;
+     font-family: 'Readex Pro', sans-serif;
      scroll-behavior: smooth;
      position: relative;
      width: 100%;
      height: 100vh;
+     
+}
+
+.tombol {
+  justify-content: center;
+  text-align: center
 }
 
 .navbar-fixed {
@@ -240,7 +249,7 @@ footer {
     }
   }
 
-  .Design{
+  /* .Design{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -497,6 +506,175 @@ button{
   color: #fff;
   margin-top: 7px;
   margin-left: 0.6rem;
+} */
+
+
+
+/* card */
+
+.cards
+{
+	position: relative;
+	width: 300px;
+	height: 380px;
+	background: #ffffff00;
+	display: flex;
+  flex-wrap: wrap;
+	box-shadow: 0 15px 45px rgba(0,0,0,0.1);
+	overflow: hidden;
+	transition: 0.5s ease-in-out;
+  margin-right: 7rem;
+  margin-left: 7rem;
+  margin-top: 10rem;
+}
+.cards:hover 
+{
+	width: 600px;
+}
+.cards .imgBx 
+{
+	position: relative;
+	min-width: 300px;
+	height: 100%;
+	background: #ffffff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 10;
+}
+.cards .imgBx  img 
+{
+	max-width: 250px;
+	transition: 0.5s ease-in-out;
+}
+
+.cards .details 
+{
+	position: absolute;
+	left: 0;
+	width: 300px;
+	height: 100%;
+	background: #4ba9e9;
+	display: flex;
+	justify-content: center;
+	padding: 20px;
+	flex-direction: column;
+	transition: 0.5s ease-in-out;
+}
+.cards:hover .details 
+{
+	left: 300px;
+}
+.cards .details::before 
+{
+	content: '';
+	position: absolute;
+	left: 0px;
+	width: 0; 
+  height: 0; 
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #fff;
+	z-index: 1;
+}
+.cards .details h3 
+{
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 1.5em;
+	line-height: 1em;
+}
+.cards .details h3 span 
+{
+	font-size: 0.65em;
+	font-weight: 300;
+	opacity: 0.85;
+	text-transform: none;
+}
+.cards .details h4 
+{
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 0.9em;
+	line-height: 1em;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+p 
+{
+	color: #fff;
+	font-size: 0.8em;
+	opacity: 0.85;
+}
+.size 
+{
+	display: flex;
+	gap: 10px;
+}
+.size li 
+{
+	list-style: none;
+	color: #fff;
+	font-size: 0.9em;
+	width: 40px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid #fff;
+	cursor: pointer;
+	font-weight: 500;
+	opacity: 0.5;
+}
+.size li:hover 
+{
+	background: #fff;
+	color: #4ba9e9;
+	opacity: 1;
+}
+.group 
+{
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+	align-items: center;
+}
+.cards .details h2
+{
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 2em;
+}
+.cards .details h2 sup 
+{
+	font-weight: 300;
+}
+.cards .details h2 small 
+{
+	font-size: 0.75em;
+}
+.cards .details a 
+{
+	display: inline-flex;
+	padding: 10px 25px;
+	background: #4ba9e9;
+	font-weight: 500;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 600;
+	color: #ffffff;
+  border: 2px solid white;
+}
+.cards .details a:hover
+{
+  background-color: #ffffff;
+  color: #4ba9e9;
+  transition-duration: .5s;
+  
 }
 
 
