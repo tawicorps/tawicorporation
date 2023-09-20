@@ -249,7 +249,7 @@ footer {
     }
   }
 
-  /* .Design{
+ .Design{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -506,176 +506,429 @@ button{
   color: #fff;
   margin-top: 7px;
   margin-left: 0.6rem;
-} */
+}  
 
 
 
-/* card */
 
-.cards
-{
-	position: relative;
-	width: 300px;
-	height: 380px;
-	background: #ffffff00;
-	display: flex;
-  flex-wrap: wrap;
-	box-shadow: 0 15px 45px rgba(0,0,0,0.1);
-	overflow: hidden;
-	transition: 0.5s ease-in-out;
-  margin-right: 6rem;
-  margin-left: 4.4rem;
-  margin-top: 10rem;
-}
-.cards:hover 
-{
-	width: 600px;
-}
-.cards .imgBx 
-{
-	position: relative;
-	min-width: 300px;
-	height: 100%;
-	background: #ffffff;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	z-index: 10;
-}
-.cards .imgBx  img 
-{
-	max-width: 250px;
-	transition: 0.5s ease-in-out;
+
+
+
+
+
+.form {
+  display:flex;
 }
 
-.cards .details 
-{
-	position: absolute;
-	left: 0;
-	width: 300px;
-	height: 100%;
-	background: #4ba9e9;
-	display: flex;
-	justify-content: center;
-	padding: 20px;
-	flex-direction: column;
-	transition: 0.5s ease-in-out;
-}
-.cards:hover .details 
-{
-	left: 300px;
-}
-.cards .details::before 
-{
-	content: '';
-	position: absolute;
-	left: 0px;
-	width: 0; 
-  height: 0; 
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-left: 10px solid #fff;
-	z-index: 1;
-}
-.cards .details h3 
-{
-	color: #fff;
-	text-transform: uppercase;
-	font-weight: 600;
-	font-size: 1.5em;
-	line-height: 1em;
-}
-.cards .details h3 span 
-{
-	font-size: 0.65em;
-	font-weight: 300;
-	opacity: 0.85;
-	text-transform: none;
-}
-.cards .details h4 
-{
-	color: #fff;
-	text-transform: uppercase;
-	font-weight: 600;
-	font-size: 0.9em;
-	line-height: 1em;
-	margin-top: 20px;
-	margin-bottom: 10px;
-}
-p 
-{
-	color: #fff;
-	font-size: 0.8em;
-	opacity: 0.85;
-}
-.size 
-{
-	display: flex;
-	gap: 10px;
-}
-.size li 
-{
-	list-style: none;
-	color: #fff;
-	font-size: 0.9em;
-	width: 40px;
-	height: 40px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border: 2px solid #fff;
-	cursor: pointer;
-	font-weight: 500;
-	opacity: 0.5;
-}
-.size li:hover 
-{
-	background: #fff;
-	color: #4ba9e9;
-	opacity: 1;
-}
-.group 
-{
-	position: relative;
-	display: flex;
-	justify-content: space-between;
-	margin-top: 20px;
-	align-items: center;
-}
-.cards .details h2
-{
-	color: #fff;
-	text-transform: uppercase;
-	font-weight: 600;
-	font-size: 2em;
-}
-.cards .details h2 sup 
-{
-	font-weight: 300;
-}
-.cards .details h2 small 
-{
-	font-size: 0.75em;
-}
-.cards .details a 
-{
-	display: inline-flex;
-	padding: 10px 25px;
-	background: #4ba9e9;
-	font-weight: 500;
-	text-decoration: none;
-	text-transform: uppercase;
-	font-weight: 600;
-	color: #ffffff;
-  border: 2px solid white;
-}
-.cards .details a:hover
-{
-  background-color: #ffffff;
-  color: #4ba9e9;
-  transition-duration: .5s;
+
+.cardss {
+  width: 225px;
+  height: 480px;
+  border: 1px solid black;
+  margin-top: 6.5rem;
+  margin-bottom: 10rem;
+  margin-left: 5.5rem;
+  box-shadow: 5px 10px rgb(0, 0, 0);
+  border-radius: 10px;
   
 }
 
+.cardss img {
+  margin-bottom: 0.5rem;
+  border-radius: 10px 10px 0 0;
+}
 
 
+.spans span {
+  font-size:xx-small;
+  font-weight: bold;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 4px;
+  margin-left: 0.5rem;
+  background-color: rgb(206, 203, 203);
+}
+
+.details h2 {
+  margin-left: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: large;
+  font-weight:800;
+  text-transform: capitalize;
+  color: white;
+}
+
+.harga p {
+  font-weight:700;
+  margin-left: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.diskon span {
+  font-size: small;
+  font-weight:300;
+  margin-left: 0.5rem;
+  text-decoration: line-through;
+  color: gray;
+}
+
+.diskon .disc {
+  background-color: rgb(4, 4, 71);
+  color: white;
+  padding: 4px;
+  border: 1px solid rgb(4, 4, 71);
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  
+}
+
+.size ul {
+  margin-left: 0.5rem;
+}
+
+.size li {
+  margin-top: 10px;
+  font-size: 0.9em;
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+  font-weight: 500;
+  color: white;
+  font-weight: bold;
+}
+
+.size li:hover {
+  background-color: rgb(4, 4, 71);
+  color: white;
+  border: 1px solid rgb(4, 4, 71);
+  transition-duration: .5s;
+}
+
+.buy {
+  margin-top: 1rem;
+  display: flex;
+  margin-left: 0.5rem;
+}
+
+.buy a {
+  border: 1px solid rgb(255, 255, 255);
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  width: 100px;
+  height: 30px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  text-align: center;
+  border-radius: 5px;
+  font-weight: 600;
+}
+.buy a:hover {
+  border: 1px solid rgb(6, 6, 92);
+  background-color: rgb(6, 6, 92);
+  color: white;
+  width: 100px;
+  height: 30px;
+  padding-bottom: 2px;
+  text-align: center;
+  border-radius: 5px;
+  font-weight: 600;
+  transition-duration: .5s;
+}
+
+.buy .heart  {
+  border: 1px solid rgb(255, 255, 255);
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  text-align: center;
+  justify-content: center;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-left: 0.5rem;
+}
+.buy .heart:hover  {
+  border: 1px solid rgb(4, 4, 71);
+  background-color: rgb(4, 4, 71);
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  text-align: center;
+  justify-content: center;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-left: 0.5rem;
+  transition-duration: .5s;
+}
+
+.buy .eye   {
+  border: 1px solid rgb(255, 255, 255);
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  text-align: center;
+  justify-content: center;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-left: 0.5rem;
+}
+.buy .eye:hover   {
+  border: 1px solid rgb(6, 6, 92);
+  background-color: rgb(6, 6, 92);
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  text-align: center;
+  justify-content: center;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-left: 0.5rem;
+  transition-duration: .5s;
+}
+
+
+.buton {
+  margin-left: 590px;
+  border: 2px solid white;
+  border-radius: 10px ;
+  width: 140px;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+}
+.buton:hover {
+  margin-left: 590px;
+  border: 1px solid #14b8a6;
+  border-radius: 10px ;
+  width: 140px;
+  color: rgb(255, 255, 255);
+  background-color: #14b8a6;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition-duration: .5s;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .form {
+    display:inline-block;
+    
+  }
+  
+  
+  .cardss {
+    width: 225px;
+    height: 480px;
+    border: 1px solid black;
+    margin-top: 6.5rem;
+    margin-bottom: 10rem;
+    margin-left: 4rem;
+    box-shadow: 5px 10px rgb(0, 0, 0);
+    border-radius: 10px;
+    
+    
+  }
+  
+  .cardss img {
+    margin-bottom: 0.5rem;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  
+  .spans span {
+    font-size:xx-small;
+    font-weight: bold;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 4px;
+    margin-left: 0.5rem;
+    background-color: rgb(206, 203, 203);
+  }
+  
+  .details h2 {
+    margin-left: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: large;
+    font-weight:800;
+    text-transform: capitalize;
+    color: white;
+  }
+  
+  .harga p {
+    font-weight:700;
+    margin-left: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: white;
+  }
+  
+  .diskon span {
+    font-size: small;
+    font-weight:300;
+    margin-left: 0.5rem;
+    text-decoration: line-through;
+    color: gray;
+  }
+  
+  .diskon .disc {
+    background-color: rgb(4, 4, 71);
+    color: white;
+    padding: 4px;
+    border: 1px solid rgb(4, 4, 71);
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    
+  }
+  
+  .size ul {
+    margin-left: 0.5rem;
+  }
+  
+  .size li {
+    margin-top: 10px;
+    font-size: 0.9em;
+    width: 32px;
+    height: 32px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .size li:hover {
+    background-color: rgb(4, 4, 71);
+    color: white;
+    border: 1px solid rgb(4, 4, 71);
+    transition-duration: .5s;
+  }
+  
+  .buy {
+    margin-top: 1rem;
+    display: flex;
+    margin-left: 0.5rem;
+  }
+  
+  .buy a {
+    border: 1px solid rgb(255, 255, 255);
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    width: 100px;
+    height: 30px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: 600;
+  }
+  .buy a:hover {
+    border: 1px solid rgb(6, 6, 92);
+    background-color: rgb(6, 6, 92);
+    color: white;
+    width: 100px;
+    height: 30px;
+    padding-bottom: 2px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: 600;
+    transition-duration: .5s;
+  }
+  
+  .buy .heart  {
+    border: 1px solid rgb(255, 255, 255);
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    text-align: center;
+    justify-content: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-left: 0.5rem;
+  }
+  .buy .heart:hover  {
+    border: 1px solid rgb(4, 4, 71);
+    background-color: rgb(4, 4, 71);
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    text-align: center;
+    justify-content: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-left: 0.5rem;
+    transition-duration: .5s;
+  }
+  
+  .buy .eye   {
+    border: 1px solid rgb(255, 255, 255);
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    text-align: center;
+    justify-content: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-left: 0.5rem;
+  }
+  .buy .eye:hover   {
+    border: 1px solid rgb(6, 6, 92);
+    background-color: rgb(6, 6, 92);
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    text-align: center;
+    justify-content: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-left: 0.5rem;
+    transition-duration: .5s;
+  }
+  
+  
+  .buton {
+    margin-left: 590px;
+    border: 2px solid white;
+    border-radius: 10px ;
+    width: 140px;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  .buton:hover {
+    margin-left: 590px;
+    border: 1px solid #14b8a6;
+    border-radius: 10px ;
+    width: 140px;
+    color: rgb(255, 255, 255);
+    background-color: #14b8a6;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition-duration: .5s;
+  }
+  
+}
